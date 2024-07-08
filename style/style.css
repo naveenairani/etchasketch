@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(174,220,238);
+background: linear-gradient(90deg, rgba(174,220,238,1) 0%, rgba(140,161,185,1) 100%);
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+#total{
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 500px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.maincontainer{
+    padding: 15px 50px 15px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/* Style for the input range */
+#input_grid {
+    width: 100%;
+    margin: 10px 0;
+}
+
+/* Style for the button */
+#btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Style for the color input to make it circular */
+#color-select {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+/* Style for the radio buttons and their labels */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"] + label {
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: inline-block;
+    background: rgb(115, 236, 196);
+}
+
+input[type="radio"]:checked + label {
+    background-color: #ddd;
+}
+
+.box{
+    box-sizing: border-box;
+}
+
+#color-select {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(174,220,238,1);
+    cursor: pointer;
+}
+.box:hover{
+    transition: 0.4s;
+    border: 1px black solid;
+}
+footer{
+    background-color: #7D7C7C;
+}
+.footer{
+    height: 30px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}

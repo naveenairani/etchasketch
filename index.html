@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="script/script.js" defer></script>
+        <link rel="stylesheet" href="style/style.css">
+    </head>
+    <body>
+        <div class="header">
+        <h1>Etch-a-Sketch</h1>
+        </div>
+        <div class="maincontainer">
+            <div class="container">
+        <input type="range" name="input_grid" id="input_grid" min="16" max="100"> 
+        <button onclick="button_click()" id="btn">Enter</button><br>
+        
+            <input type="color" name="color-select" id="color-select">
+        <form>
+            <input type="radio" id="custom-color" name="color-mode" value="custom">
+            <label for="custom-color">Custom Color</label><br>
+            <input type="radio" id="random-color" name="color-mode" value="random">
+            <label for="random-color">Random Color</label><br>
+            <input type="radio" id="eraser" name="color-mode" value="eraser">
+            <label for="eraser">Eraser</label>
+        </form>
+        </div>
+        <div class="drawing">
+        <div id="total"></div>
+        </div>
+        </div>
+        <footer>
+            <div class="footer">By Naveen <a href="https://github.com/naveenairani"><img width="25px" style="margin-left: 5px;"  src="images/github-logo.png" alt="github-logo"></a></div>
+        </footer>
+    </body>
+</html>
